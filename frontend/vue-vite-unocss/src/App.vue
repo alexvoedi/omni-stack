@@ -1,7 +1,13 @@
 <script setup lang="ts"></script>
 
 <template>
-  <router-view></router-view>
+  <n-config-provider>
+    <n-message-provider>
+      <n-dialog-provider>
+        <router-view></router-view>
+      </n-dialog-provider>
+    </n-message-provider>
+  </n-config-provider>
 </template>
 
 <style lang="postcss"></style>
